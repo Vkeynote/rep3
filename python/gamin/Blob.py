@@ -38,6 +38,7 @@ class Blob:
             self.y = 0
         elif self.y > HEIGHT:
             self.y = HEIGHT
+            
 
 def draw_environment(blob):
     game_display.fill(WHITE)
@@ -51,6 +52,7 @@ def main():
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                
                 pygame.quit()
                 quit()
         draw_environment(red_blob)
